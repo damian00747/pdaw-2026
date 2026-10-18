@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color:#d4af37;
+    background-image: linear-gradient(
+        to right,
+        rgba(17, 17, 17, 0.85) 30%,
+        rgba(17, 17, 17, 0.4) 60%,
+        rgba(0, 0, 0, 0) 100%
+    ), url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.logo {
+    font-size: 80px;
+    font-weight: Cinzel, sans-serif;
+    color: #d4af37;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0) 100%);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.hamburger {
+    background-color: #d4af37;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 2px;
+}
+
+.nav-links {
+    display: none;
+}
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background-color: #d4af37;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d4af37;
+    min-width: 200px;
+    z-index: 100;
+}
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: Cinzel, sans-serif;
+    font-size: 18px;
+    display: block;
+}
+.nav-links a:hover {
+    background-color: rgba(255, 2555, 255, 0.5);
+    color: #d4af37;
+    border-radius: 4px;
+}
